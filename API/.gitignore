@@ -1,0 +1,56 @@
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Файлы пользователя
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Папки Visual Studio
+.vs/
+.idea/
+
+# Папки сборки
+bin/
+obj/
+out/
+
+# Пакеты NuGet
+*.nupkg
+*.snupkg
+packages/
+# Если вы используете PackageReference (по умолчанию в .NET Core),
+# папку packages можно не игнорировать
+
+# Конфигурационные файлы среды
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Логи
+*.log
+logs/
+LogFiles/
+
+# Тестовые результаты
+TestResult*/
+TestResults/
+
+# Временные файлы
+*.tmp
+*.temp
+*.bak
+
+# Кэш
+*.vspscc
+*.vssscc
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# DotNet Tools
+.toolstarget
+.dotnet_tools/

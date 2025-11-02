@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-add-category',
@@ -10,9 +10,16 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 export class AddCategoryComponent {
 
   addCategoryFormGroup = new FormGroup({
-    name: new FormControl<string>('', { nonNullable: true }),
-    urlHandle: new FormControl<string>('', { nonNullable: true })
+    name: new FormControl<string>('', { nonNullable: true, validators: [Validators.required, Validators.maxLength(100)] }),
+    urlHandle: new FormControl<string>('', { nonNullable: true, validators: [Validators.required, Validators.maxLength(200)] })
   });
+
+  get nameFormControl() {
+    return this.addCategoryFormGroup.controls.name
+  }
+  get urlHandleFormControl() {
+    return this.addCategoryFormGroup.controls.urlHandle
+  }
 
   onSubmit() {
     console.log(this.addCategoryFormGroup.getRawValue());

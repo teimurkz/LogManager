@@ -32,7 +32,6 @@ namespace LogProject.Controllers
                 Name = category.Name,
                 UrlHandle = category.UrlHandle
             };
-            Console.writeline(response);
             return Ok(response);
         }
     }

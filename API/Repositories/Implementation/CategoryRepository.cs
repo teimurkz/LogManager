@@ -1,5 +1,6 @@
 ﻿using LogProject.Data;
 using LogProject.Models.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace LogProject.Repositories.Implementation;
 
@@ -18,5 +19,10 @@ public class CategoryRepository:ICategoryRepository
         await _dbContext.Categories.AddAsync(category);
         await _dbContext.SaveChangesAsync(); 
         return category;
+    }
+
+    public async  Task<IEnumerable<Category>> GetAllCategoriesAsync()
+    {
+        return await _dbContext.Categories.ToListAsync();
     }
 }

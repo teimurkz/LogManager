@@ -5,4 +5,6 @@ namespace LogProject.Repositories.Implementation;
 public interface ICategoryRepository
 {
     Task<Category> CreateAsync(Category category);
+    Task<IEnumerable<Category>> GetAllCategoriesAsync();
+    
 }

@@ -1,0 +1,118 @@
+########################
+#  Общие системные файлы
+########################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+########################
+#  Файлы IDE и редакторов
+########################
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+########################
+#  .NET / ASP.NET Core
+########################
+bin/
+obj/
+out/
+debug/
+release/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.dbmdl
+*.bak
+*.log
+*.vspscc
+*.vssscc
+TestResult*/
+TestResults/
+
+# User secrets / локальные конфиги
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Папки и файлы публикации
+publish/
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+# Entity Framework
+Migrations/
+*.mdf
+*.ldf
+
+########################
+#  Angular / Node.js (UI)
+########################
+# Папки зависимостей
+node_modules/
+jspm_packages/
+
+# Сборки и билды
+dist/
+build/
+tmp/
+temp/
+out-tsc/
+coverage/
+
+# IDE Cache
+.angular/
+.angular/cache/
+.angular/config.json
+
+# Package Manager файлы кэша
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Среда окружения
+.env
+.env.*.local
+
+# Файлы тестов
+*.spec.ts
+
+########################
+#  Docker (если используется)
+########################
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+########################
+#  OS и кэш
+########################
+*.swp
+*.tmp
+*.temp
+*.log
+*.bak
+*.old
+*.orig
+*.rej
